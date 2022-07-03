@@ -74,9 +74,7 @@ public class Array_assignment {
 				System.out.println("\nTotal amount of " + search_name + " core " + search_core  +" in MMK : " + Math.round(total_mmk) + " kyat");
 			}
 		}
-		
 		//close
 		sc.close();
 	}
 }
-https://github.com/myoponeponechit/JavaLessons.git
