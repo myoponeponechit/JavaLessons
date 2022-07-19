@@ -1,0 +1,14 @@
+// method overriding
+
+- same method name
+- same parameters
+	- number of parameter
+	- parameter's data type
+	- parameter order => (String,int)
+- different implementation
+
+-------------------
+// method ovweloding
+
+- same method name
+- different parameters

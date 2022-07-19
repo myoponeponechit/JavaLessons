@@ -13,7 +13,8 @@ public class LocalDate_Testing {
 		System.out.println("Today: " + today);
 		System.out.println("Tomorrow: " + today.plusDays(1));
 		System.out.println("Yesterday: " + today.minusDays(1));
-		System.out.println("Date2: " + date2);
+		System.out.println("Date2 day: " + date2.getDayOfWeek());
+		//System.out.println( "Date2 Era: " + date2.getEra());
 		System.out.println("Date3: " + date3);
 		
 		System.out.println("Current year: " + today.getYear());

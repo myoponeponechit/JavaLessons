@@ -13,13 +13,13 @@ public class Assignment2 {
 			System.out.print("Enter your time that wake up : ");
 			int wake_up_time = sc.nextInt();
 			int total_sleep_time = (12 - bed_time) + wake_up_time;
-			//System.out.println("Total sleep time : " + total_sleep_time + " hours");
+			System.out.println("Total sleep time : " + total_sleep_time + " hours");
 			//total_sleep_time > 5 && total_sleep_time < 8 => You take care your health well!
-			//total_sleep_time < 5 => Yor are very hardworking!	
+			//total_sleep_time < 5 => You are very hardworking!	
 			//total_sleep_time > 8 => You are abnormal!
 			
 			if(total_sleep_time < 5) {
-				System.out.println("Yor are very hardworking!");
+				System.out.println("You are very hardworking!");
 			}
 			else if(total_sleep_time > 5 && total_sleep_time <= 8) {
 				System.out.println("You take care your health well!");
