@@ -1,6 +1,7 @@
 package day13;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -20,6 +21,11 @@ public class Creating_List {
 		System.out.println("Number of element: " + list3.size());
 		list3.add("Aung Aung");
 		list3.add("Khing");
-		System.out.println("No of element: " + list3.size());
+		System.out.println("Number of element: " + list3.size());
+		
+		Integer[] numbers = {100, 200, 300, 400};
+		
+		List<Integer> list4 = new ArrayList<>(Arrays.asList(numbers));
+		System.out.println("Number of element in list4: " + list4.size());
 	}
 }
