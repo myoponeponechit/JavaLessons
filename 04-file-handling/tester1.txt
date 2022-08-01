@@ -1,0 +1,3 @@
+BufferWriter is the simplest way of writing textual data to a File.
+It supports buffering
+This is end line.

@@ -1,0 +1,7 @@
+1001	Thae Thae Aung	Yangon
+1002	Soe Soe Khing	Mandalay
+1003	Hla Nu	Mandalay
+1004	Thin Thin Aung	Kalay
+1005	Yamin	Yangon
+1006	Aung Aung	Monywa
+1007	Kyaw Kyaw	Kalay
