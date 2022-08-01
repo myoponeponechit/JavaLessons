@@ -1,0 +1,8 @@
+Process
+	- cost expensive
+	- has at least one thread
+	- can run with many thread (multi-threading)
+	- multi-processing
+
+Thread
+	- work single task
