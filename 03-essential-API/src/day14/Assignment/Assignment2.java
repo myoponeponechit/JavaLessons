@@ -78,7 +78,11 @@ public class Assignment2 {
 	private static void addingNewBook(int code, String title, String category, LocalDate p_date, String name,
 			String country) {
 		var book = new Book();
-		if(code==1001 || code==1002 || code==1003 || code==1004 || code==1006 || code == 1008) {
+		List<Integer> codeList = new ArrayList<>();
+		for(var c : bookList) {
+			codeList.add(c.getCode());
+		}
+		if(codeList.contains(code)) {
 			System.err.println("This book code has already exist.");
 		}
 		else {
@@ -92,11 +96,11 @@ public class Assignment2 {
 				}
 				else {
 					categoryList.add(category);
+					book.setCategory(categoryList.get(len));
 					break;
 				}
 			}
-			//System.out.println(categoryList);
-			book.setCategory(categoryList.get(len));
+			
 				
 			book.setPublishDate(p_date);
 			int size = authorList.size();
