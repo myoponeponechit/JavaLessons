@@ -12,12 +12,12 @@ public class List_Assignment {
 		var list = new ArrayList<Student>();
 		
 		// insert new student
-		list.add(new Student("Aung Aung", 101));
+		list.add(new Student("Aung Aung", 105));
 		list.add(new Student("Cherry", 102));
 		list.add(new Student("Hla Hla", 103));
 		
 		// sorting list
-		
+		Collections.sort(list, Student.StuRollno);
 		// display all student
 		System.out.println("-------- All Students ---------");
 		System.out.println("Rno\tName");
@@ -49,18 +49,18 @@ public class List_Assignment {
 		// search with rno
 		System.out.println("\n------- Search with rno --------");
 		System.out.print("Enter roll no: ");
-		int search_rno = sc.nextInt();
+		int search_rno = Integer.parseInt(sc.nextLine());
 		for(var obj : list) {
 			if(obj.getRno() == search_rno) {
 				System.out.println("Name: " + obj.getName());
-				System.out.println("Rno: " + obj.getRno());
-				break;
+				System.out.println("Rollno: " + obj.getRno());
 			}
-			else {
-				System.err.println("This roll number does not exist!");
-				break;
-			}
+//			else {
+//				System.err.println("This roll number does not exist!");
+//				break;
+//			}
 		}
+		
 		//delete student info: specified according to roll
 		System.out.println("\n------ Deleat specified roll number -----");
 		System.out.print("Enter rno: ");
@@ -76,40 +76,14 @@ public class List_Assignment {
 					System.out.print("|\t" + stu.name);
 					System.out.println();
 				});
-				break;
+				//break;
 			}
-			else {
-				System.err.println("This roll number does not exist!");
-				break;
-			}
+//			else {
+//				System.err.println("This roll number does not exist!");
+//				break;
+//			}
+		}
 		}
 	}
-}
 
-class Student {
-	
-    String name;
-	int rno;
-	
-	public Student() {
-		
-	}
-	public Student(String name, int rno) {
-		super();
-		this.name = name;
-		this.rno = rno;
-	}
-	public String getName() {
-		return name;
-	}
-	public void setName(String name) {
-		this.name = name;
-	}
-	public int getRno() {
-		return rno;
-	}
-	public void setRno(int rno) {
-		this.rno = rno;
-	}
-	
-}
+
