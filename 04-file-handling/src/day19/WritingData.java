@@ -1,10 +1,12 @@
 package day19;
 
 import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.RandomAccessFile;
 import java.nio.ByteBuffer;
+import java.nio.MappedByteBuffer;
 import java.nio.channels.FileChannel;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -23,7 +25,28 @@ public class WritingData {
 		//BufferWriter(Path.of("tester1.txt"));
 		//readWithChannel();
 		//readLarFileWithChannel();
-		writeWithChannel();
+		//writeWithChannel();
+		writeLarDataWithChannel();
+	}
+
+	private static void writeLarDataWithChannel() {
+		
+		String data = """
+				If I say that my someone special,
+				everybody know that is you.
+				""";
+		try(RandomAccessFile file = new RandomAccessFile("data-1.txt", "rw")){
+			
+			FileChannel channel = file.getChannel();
+			MappedByteBuffer buffer = channel.map(FileChannel.MapMode.READ_WRITE, 0, 1024*8);
+			
+			buffer.put(data.getBytes());
+			buffer.clear();
+			System.out.println("Save....");
+		}
+		catch (Exception e) {
+			// TODO: handle exception
+		}
 	}
 
 	private static void writeWithChannel() throws FileNotFoundException, IOException {
@@ -36,8 +59,19 @@ public class WritingData {
 			FileChannel channel = file.getChannel();
 			
 			// 2
-			byte[] byteData = data.getBytes();
-			ByteBuffer buffer = ByteBuffer.allocate(0);
+			byte[] content = data.getBytes();
+			ByteBuffer buffer = ByteBuffer.allocate(content.length);
+			
+			// 3 (write data to buffer from java)
+			buffer.put(content);
+			buffer.flip();
+			
+			// 5
+			channel.write(buffer);
+			System.out.println("Save Success....");
+		}
+		catch (Exception e) {
+			e.printStackTrace();
 		}
 		
 	}
