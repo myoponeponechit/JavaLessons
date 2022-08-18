@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="680.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mmit.controller.StartController">
+   <children>
+      <Label layoutX="178.0" layoutY="52.0" text="Book Management System" textFill="#336699">
+         <font>
+            <Font name="Arial" size="27.0" />
+         </font>
+      </Label>
+      <Separator layoutX="84.0" layoutY="104.0" prefHeight="13.0" prefWidth="512.0" />
+      <Pane layoutX="155.0" layoutY="138.0" onMouseClicked="#panel_category_click" prefHeight="162.0" prefWidth="135.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="119.0" layoutX="7.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../images/category.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="30.0" layoutY="126.0" text="Category" textFill="#ffd11a">
+               <font>
+                  <Font name="Arial Bold" size="17.0" />
+               </font>
+            </Label>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Pane>
+      <Pane layoutX="379.0" layoutY="138.0" onMouseClicked="#panel_author_click" prefHeight="162.0" prefWidth="135.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="119.0" layoutX="7.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../images/author.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="40.0" layoutY="126.0" text="Author" textFill="#ffd11a">
+               <font>
+                  <Font name="Arial Bold" size="17.0" />
+               </font>
+            </Label>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Pane>
+      <Pane layoutX="274.0" layoutY="329.0" onMouseClicked="#panel_book_click" prefHeight="162.0" prefWidth="135.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="119.0" layoutX="7.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../images/book.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="46.0" layoutY="138.0" text="Book" textFill="#ffd11a">
+               <font>
+                  <Font name="Arial Bold" size="17.0" />
+               </font>
+            </Label>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Pane>
+      <Label layoutX="569.0" layoutY="539.0" onMouseClicked="#back_click" text="&lt;&lt; Back">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+   <cursor>
+      <Cursor fx:constant="HAND" />
+   </cursor>
+</AnchorPane>

@@ -1,0 +1,13 @@
+main color, title - #336699
+
+main text color - #ffd11a
+
+add btn, register btn, login btn, save btn - #009933
+
+del btn, reset btn -  #ff3300
+
+update, edit - #3385ff
+
+back click - #000000
+
+

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="467.0" prefWidth="779.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mmit.controller.BookViewController">
+   <children>
+      <Label layoutX="26.0" layoutY="39.0" text="Book List" textFill="#336699">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Label>
+      <ScrollPane layoutX="26.0" layoutY="79.0" prefHeight="297.0" prefWidth="728.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="tbl_book" prefHeight="297.0" prefWidth="728.0">
+                    <columns>
+                      <TableColumn fx:id="col_code" prefWidth="60.0" text="Code" />
+                      <TableColumn fx:id="col_title" prefWidth="188.0" text="Title" />
+                        <TableColumn fx:id="col_price" prefWidth="85.0" text="Price" />
+                        <TableColumn fx:id="col_publishDate" prefWidth="108.0" text="Publish Date" />
+                        <TableColumn fx:id="col_category" prefWidth="82.0" text="Category" />
+                        <TableColumn fx:id="col_author" prefWidth="95.0" text="Author" />
+                        <TableColumn fx:id="col_entryBy" prefWidth="109.0" text="Entry By" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <Label layoutX="700.0" layoutY="425.0" onMouseClicked="#back_click" text="&lt;&lt; Back">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+   </children>
+</AnchorPane>

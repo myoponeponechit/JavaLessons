@@ -1,0 +1,53 @@
+MVC pattern
+**************
+
+M -> Model(Data Layer)
+
+
+V -> View(Presentation Layer)
+
+
+C -> Controller(Logic Layer between Model and View)
+
+------------------------------------------------------------
+
+awt/swing
+	- all java code
+
+javafx
+	- fxml
+
+--------------------------------
+	- html
+		<html>
+		   <body>
+			<button type = "submit">Register</button>
+			<button></button>
+		   </body>
+		</html>
+----------------------------------( JSON )
+	- xml(not design)
+		<students>
+			<student>
+				<rno>1</rno>
+				<name>Su Su</name>
+			</student>
+			<student>
+				<rno>2</rno>
+				<name>Aung Aung</name>
+			</student>
+		</students>
+----------------------------------
+	- json
+		{
+			students:[
+				student:{
+					rno : 1,
+					name : 'Su Su'
+				},
+				student:{
+					rno : 2,
+					name : 'Aung Aung'
+				}
+			]
+		}
