@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#lblRegister_click" prefHeight="427.0" prefWidth="633.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mmit.StartController">
+   <children>
+      <Pane layoutY="52.0" prefHeight="59.0" prefWidth="633.0" style="-fx-background-color: #1c0a6e;">
+         <children>
+            <Label layoutX="247.0" layoutY="14.0" text="Please Login" textFill="#f2eded">
+               <font>
+                  <Font name="Arial" size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="122.0" layoutY="163.0" text="Email">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtEmail" layoutX="240.0" layoutY="157.0" prefHeight="39.0" prefWidth="245.0" />
+      <Label layoutX="122.0" layoutY="245.0" text="Password">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="txtPassword" layoutX="240.0" layoutY="239.0" prefHeight="39.0" prefWidth="245.0" />
+      <Button layoutX="260.0" layoutY="327.0" mnemonicParsing="false" onAction="#btnLogin_click" prefHeight="30.0" prefWidth="92.0" style="-fx-background-color: #4194b5;" text="Sign in" textFill="#eeecec">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="373.0" layoutY="327.0" mnemonicParsing="false" onAction="#btnClear_click" prefHeight="30.0" prefWidth="92.0" style="-fx-background-color: #f70519;" text="Clear" textFill="#f8f6f6">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="122.0" layoutY="379.0" text="If you don't have an account, Please ">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font></Label>
+      <Label layoutX="350.0" layoutY="380.0" text="Register" textFill="#104fe0">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+   </children>
+</AnchorPane>
