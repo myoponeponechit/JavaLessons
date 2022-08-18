@@ -35,7 +35,7 @@ public class TransactionsManagement {
 			pstm.setInt(2, 1);
 			pstm.executeUpdate();
 			
-			con.commit();
+			con.commit(); // all data commit
 			System.out.println("Success");
 		}
 		catch (Exception e) {
