@@ -134,7 +134,12 @@ public class BookAddController implements Initializable{
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
 		
-		catList= DatabaseHandler.findAllCategory();
+		try {
+			catList= DatabaseHandler.findAllCategory();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		authorList = DatabaseHandler.findAllAuthor();
 		
 		List<String> categories = catList.stream()

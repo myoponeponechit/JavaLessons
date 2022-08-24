@@ -152,7 +152,12 @@ public class BookEditController implements Initializable{
 		public void initialize(URL arg0, ResourceBundle arg1) {
 			
 			authorList = DatabaseHandler.findAllAuthor();
-			catList = DatabaseHandler.findAllCategory();
+			try {
+				catList = DatabaseHandler.findAllCategory();
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 			
 			List<String> authors = authorList.stream()
 						.map(a -> a.getName())

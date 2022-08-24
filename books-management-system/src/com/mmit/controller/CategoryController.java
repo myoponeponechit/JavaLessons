@@ -110,7 +110,12 @@ public class CategoryController implements Initializable{
 		col_id.setCellValueFactory(new PropertyValueFactory<>("id"));
 		col_name.setCellValueFactory(new PropertyValueFactory<>("name"));
 		
-		showCategory();
+		try {
+			showCategory();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
 		tbl_category.getSelectionModel().selectedItemProperty()
 		.addListener(
@@ -123,7 +128,7 @@ public class CategoryController implements Initializable{
 			);
 	}
 
-	private void showCategory() {
+	private void showCategory() throws Exception {
 		
 		List<Category> list = DatabaseHandler.findAllCategory();
 		tbl_category.setItems(FXCollections.observableArrayList(list));

@@ -31,7 +31,7 @@ public class DatabaseHandler {
 		}
 	}
 
-	public static List<Category> findAllCategory() {
+	public static List<Category> findAllCategory() throws Exception {
 		List<Category> data = new ArrayList<>();
 		try(var con = createConnection()) {
 			// select id, name from
@@ -53,7 +53,7 @@ public class DatabaseHandler {
 			}
 		}
 		catch (Exception e) {
-			
+			e.printStackTrace();
 		}
 		return data;
 	}

@@ -19,7 +19,7 @@ public class Start extends Application {
 	@Override
 	public void start(Stage primaryStage) {
 		try {
-			AnchorPane root = (AnchorPane)FXMLLoader.load(getClass().getResource("view/Login.fxml"));
+			AnchorPane root = (AnchorPane)FXMLLoader.load(getClass().getResource("view/BookSearch.fxml"));
 			Scene scene = new Scene(root);
 			
 			primaryStage.setScene(scene);
