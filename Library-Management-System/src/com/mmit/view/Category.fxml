@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="529.0" prefWidth="545.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mmit.controller.CategoryController">
+   <children>
+      <ScrollPane layoutX="63.0" layoutY="92.0" prefHeight="243.0" prefWidth="422.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="tbl_category" prefHeight="243.0" prefWidth="422.0">
+                    <columns>
+                      <TableColumn fx:id="col_id" prefWidth="78.0" text="ID" />
+                      <TableColumn fx:id="col_name" prefWidth="343.0" text="Name" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <Label layoutX="80.0" layoutY="363.0" text="Category Name">
+         <font>
+            <Font name="Lucida Fax Regular" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_name" layoutX="208.0" layoutY="356.0" prefHeight="31.0" prefWidth="261.0" promptText="Enter category name">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <Button layoutX="207.0" layoutY="411.0" mnemonicParsing="false" onAction="#btn_add_click" prefHeight="31.0" prefWidth="67.0" style="-fx-background-color: #259439;" text="Add" textFill="#e5ebe6">
+         <font>
+            <Font name="Lucida Fax Regular" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="304.0" layoutY="411.0" mnemonicParsing="false" onAction="#btn_update_click" prefHeight="31.0" prefWidth="67.0" style="-fx-background-color: #4e96e8;" text="Update" textFill="#f8f8f8">
+         <font>
+            <Font name="Lucida Fax Regular" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="401.0" layoutY="411.0" mnemonicParsing="false" onAction="#btn_delete_click" prefHeight="31.0" prefWidth="67.0" style="-fx-background-color: #eb0707;" text="Delete" textFill="#e5ebe6">
+         <font>
+            <Font name="Lucida Fax Regular" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="433.0" layoutY="479.0" onMouseClicked="#back_click" text="&lt;&lt; Back">
+         <font>
+            <Font name="Lucida Fax Demibold" size="17.0" />
+         </font>
+      </Label>
+      <Button layoutX="506.0" layoutY="-1.0" mnemonicParsing="false" onAction="#btn_logout_click" prefHeight="35.0" prefWidth="39.0" style="-fx-background-color: #eb0707; -fx-border-color: #eb0707;" text="x" textFill="#fffbfb">
+         <font>
+            <Font name="Lucida Fax Demibold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="63.0" layoutY="54.0" text="Category List" textFill="#0f5494">
+         <font>
+            <Font name="Lucida Fax Demibold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

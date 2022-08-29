@@ -1,0 +1,7 @@
+main color - #0f5494
+
+delete, close - #eb0707
+
+add, save - #259439
+
+update - #4e96e8

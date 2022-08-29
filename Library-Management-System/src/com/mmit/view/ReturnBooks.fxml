@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="366.0" prefWidth="726.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/18" fx:controller="com.mmit.controller.ReturnBooksController">
+   <children>
+      <ScrollPane layoutX="42.0" layoutY="40.0" prefHeight="243.0" prefWidth="444.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="tbl_borrowbook" prefHeight="241.0" prefWidth="444.0">
+                    <columns>
+                      <TableColumn fx:id="col_code" prefWidth="59.0" text="Code" />
+                      <TableColumn fx:id="col_title" prefWidth="135.0" text="Title" />
+                        <TableColumn fx:id="col_borrow_date" prefWidth="86.0" text="Borrow Date" />
+                        <TableColumn fx:id="col_due_date" prefWidth="88.0" text="Due Date" />
+                        <TableColumn fx:id="col_fees" prefWidth="74.0" text="Fees" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <Label layoutX="519.0" layoutY="40.0" text="Member ID :">
+         <font>
+            <Font name="Lucida Fax Demibold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_card_id" layoutX="519.0" layoutY="67.0" prefHeight="30.0" prefWidth="171.0" promptText="Enter card id">
+         <font>
+            <Font name="Lucida Fax Regular" size="13.0" />
+         </font>
+      </TextField>
+      <Label layoutX="519.0" layoutY="183.0" text="Book Code :">
+         <font>
+            <Font name="Lucida Fax Demibold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_book_code" layoutX="519.0" layoutY="210.0" prefHeight="30.0" prefWidth="171.0" promptText="Enter book code">
+         <font>
+            <Font name="Lucida Fax Regular" size="13.0" />
+         </font>
+      </TextField>
+      <Button layoutX="520.0" layoutY="256.0" mnemonicParsing="false" onAction="#btn_return_click" style="-fx-background-color: #0f5494;" text="Return" textFill="#f2efef">
+         <font>
+            <Font name="Lucida Fax Regular" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="627.0" layoutY="256.0" mnemonicParsing="false" onAction="#btn_cancel_click" prefHeight="24.0" prefWidth="63.0" text="Cancel" textFill="#0f5494">
+         <font>
+            <Font name="Lucida Fax Regular" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="691.0" mnemonicParsing="false" onAction="#btn_logout_click" style="-fx-background-color: #eb0707;" text="x" textFill="#f8f5f5">
+         <font>
+            <Font name="Lucida Fax Demibold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="635.0" layoutY="324.0" onMouseClicked="#back_click" text="&lt;&lt; Back">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Lucida Fax Demibold" size="16.0" />
+         </font>
+      </Label>
+      <Button layoutX="519.0" layoutY="117.0" mnemonicParsing="false" onAction="#btn_check_click" prefHeight="25.0" prefWidth="63.0" style="-fx-background-color: #259439;" text="Check" textFill="#eeecec">
+         <font>
+            <Font name="Lucida Fax Regular" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

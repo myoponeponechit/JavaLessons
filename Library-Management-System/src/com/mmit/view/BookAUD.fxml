@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="621.0" prefWidth="774.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mmit.controller.BookAUDController">
+   <children>
+      <ScrollPane layoutX="25.0" layoutY="55.0" prefHeight="209.0" prefWidth="728.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="tbl_book" prefHeight="209.0" prefWidth="729.0">
+                    <columns>
+                      <TableColumn fx:id="col_code" prefWidth="54.0" text="Code" />
+                      <TableColumn fx:id="col_title" prefWidth="159.0" text="Title" />
+                        <TableColumn fx:id="col_publish_date" prefWidth="101.0" text="Publish Date" />
+                        <TableColumn fx:id="col_author" prefWidth="105.0" text="Author" />
+                        <TableColumn fx:id="col_category" prefWidth="125.0" text="Category" />
+                        <TableColumn fx:id="col_available" prefWidth="57.0" text="Available" />
+                        <TableColumn fx:id="col_librarian" prefWidth="125.0" text="Entry By" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <Label layoutX="23.0" layoutY="24.0" text="Add/ Edit/ Delete Books" textFill="#0f5494">
+         <font>
+            <Font name="Lucida Fax Demibold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="178.0" layoutY="292.0" text="Code">
+         <font>
+            <Font name="Lucida Fax Demibold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_code" layoutX="286.0" layoutY="285.0" prefHeight="33.0" prefWidth="284.0" promptText="Enter code">
+         <font>
+            <Font name="Lucida Fax Regular" size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="178.0" layoutY="339.0" text="Title">
+         <font>
+            <Font name="Lucida Fax Demibold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_title" layoutX="286.0" layoutY="332.0" prefHeight="33.0" prefWidth="284.0" promptText="Enter title">
+         <font>
+            <Font name="Lucida Fax Regular" size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="178.0" layoutY="386.0" text="Publish Date">
+         <font>
+            <Font name="Lucida Fax Demibold" size="14.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="txt_publish_date" layoutX="286.0" layoutY="379.0" prefHeight="33.0" prefWidth="284.0" promptText="Choose date" />
+      <Label layoutX="178.0" layoutY="437.0" text="Author">
+         <font>
+            <Font name="Lucida Fax Demibold" size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cbo_author" layoutX="286.0" layoutY="430.0" prefHeight="33.0" prefWidth="284.0" promptText="Choose author" />
+      <Label layoutX="178.0" layoutY="488.0" text="Category">
+         <font>
+            <Font name="Lucida Fax Demibold" size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cbo_category" layoutX="286.0" layoutY="481.0" prefHeight="33.0" prefWidth="284.0" promptText="Choose category" />
+      <Button layoutX="286.0" layoutY="536.0" mnemonicParsing="false" onAction="#btn_add_click" prefHeight="24.0" prefWidth="60.0" style="-fx-background-color: #259439;" text="Add" textFill="#f5f0f0">
+         <font>
+            <Font name="Lucida Fax Regular" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="361.0" layoutY="536.0" mnemonicParsing="false" onAction="#btn_update_click" prefHeight="24.0" prefWidth="67.0" style="-fx-background-color: #4e96e8;" text="Update" textFill="#f5f0f0">
+         <font>
+            <Font name="Lucida Fax Regular" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="437.0" layoutY="536.0" mnemonicParsing="false" onAction="#btn_delete_click" prefHeight="24.0" prefWidth="60.0" style="-fx-background-color: #eb0707;" text="Delete" textFill="#f5f0f0">
+         <font>
+            <Font name="Lucida Fax Regular" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="510.0" layoutY="536.0" mnemonicParsing="false" onAction="#btn_reset_click" prefHeight="24.0" prefWidth="60.0" style="-fx-background-color: yellow;" text="Reset" textFill="#f20a0a">
+         <font>
+            <Font name="Lucida Fax Regular" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="725.0" layoutY="-4.0" mnemonicParsing="false" onAction="#btn_logout_click" prefHeight="33.0" prefWidth="52.0" style="-fx-background-color: #eb0707; -fx-border-color: #eb0707;" text="x" textFill="#f2f0f0">
+         <font>
+            <Font name="Lucida Fax Demibold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="668.0" layoutY="575.0" onMouseClicked="#back_click" text="&lt;&lt; Back">
+         <font>
+            <Font name="Lucida Fax Demibold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Ellipse?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="514.0" prefWidth="614.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mmit.controller.IndexController">
+   <children>
+      <Label layoutX="141.0" layoutY="43.0" text="Library Managemant System">
+         <font>
+            <Font name="Lucida Fax Demibold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="141.0" layoutY="120.0" text="Email">
+         <font>
+            <Font name="Lucida Fax Regular" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="141.0" layoutY="167.0" text="Password">
+         <font>
+            <Font name="Lucida Fax Regular" size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="296.0" layoutY="221.0" mnemonicParsing="false" onAction="#btn_login_click" prefHeight="30.0" prefWidth="67.0" style="-fx-background-color: #0f5494;" text="Login" textFill="#f2efef">
+         <font>
+            <Font name="Lucida Fax Regular" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="405.0" layoutY="221.0" mnemonicParsing="false" onAction="#btn_cancel_click" prefHeight="30.0" prefWidth="67.0" style="-fx-background-color: white; -fx-border-color: #0f5494; -fx-border-radius: 3;" text="Cancel" textFill="#0f5494">
+         <font>
+            <Font name="Lucida Fax Regular" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Ellipse fill="#0f5494" layoutX="36.0" layoutY="334.0" radiusX="155.0" radiusY="143.0" stroke="#0f5494" strokeType="INSIDE" />
+      <Ellipse fill="#0f5494" layoutX="224.0" layoutY="375.0" radiusX="92.0" radiusY="84.0" stroke="#0f5494" strokeType="INSIDE" />
+      <Ellipse fill="#0f5494" layoutX="351.0" layoutY="408.0" radiusX="77.0" radiusY="74.0" stroke="#0f5494" strokeType="INSIDE" />
+      <Ellipse fill="#0f5494" layoutX="490.0" layoutY="404.0" radiusX="96.0" radiusY="98.0" stroke="#0f5494" strokeType="INSIDE" />
+      <Ellipse fill="#0f5494" layoutX="580.0" layoutY="314.0" radiusX="62.0" radiusY="49.0" stroke="#0f5494" strokeType="INSIDE" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0f5494" height="200.0" layoutY="314.0" stroke="#0f5494" strokeType="INSIDE" width="287.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0f5494" height="136.0" layoutX="268.0" layoutY="378.0" stroke="#0f5494" strokeType="INSIDE" width="255.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0f5494" height="196.0" layoutX="519.0" layoutY="318.0" stroke="#0f5494" strokeType="INSIDE" width="123.0" />
+      <Label layoutX="39.0" layoutY="469.0" text="Developed By Scarlett" textFill="#eeecec">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Button layoutX="603.0" mnemonicParsing="false" onAction="#btn_logout_click" prefHeight="1.0" prefWidth="39.0" style="-fx-background-color: #eb0707; -fx-border-color: #eb0707;" text="x" textFill="#fcf3f3">
+         <font>
+            <Font name="Lucida Fax Demibold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <PasswordField fx:id="txt_pass" layoutX="247.0" layoutY="161.0" prefHeight="30.0" prefWidth="255.0" promptText="Enter password">
+         <font>
+            <Font name="Lucida Fax Regular" size="14.0" />
+         </font>
+      </PasswordField>
+      <TextField fx:id="txt_email" layoutX="247.0" layoutY="114.0" prefHeight="30.0" prefWidth="255.0" promptText="abc@gmail.com">
+         <font>
+            <Font name="Lucida Fax Regular" size="14.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>

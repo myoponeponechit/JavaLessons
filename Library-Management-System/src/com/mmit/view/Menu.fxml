@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="561.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mmit.controller.MenuController">
+   <children>
+      <Pane layoutX="59.0" layoutY="107.0" onMouseClicked="#category_click" prefHeight="129.0" prefWidth="98.0">
+         <children>
+            <ImageView fitHeight="97.0" fitWidth="108.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../images/category.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="4.0" layoutY="97.0" text="Categories" textFill="#0f5494">
+               <font>
+                  <Font name="Lucida Fax Demibold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Pane>
+      <Pane layoutX="237.0" layoutY="56.0" onMouseClicked="#author_click" prefHeight="129.0" prefWidth="97.0">
+         <children>
+            <ImageView fitHeight="111.0" fitWidth="97.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../images/authors.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="19.0" layoutY="97.0" text="Authors" textFill="#0f5494">
+               <font>
+                  <Font name="Lucida Fax Demibold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Pane>
+      <Pane layoutX="415.0" layoutY="107.0" onMouseClicked="#book_click" prefHeight="129.0" prefWidth="98.0">
+         <children>
+            <ImageView fitHeight="129.0" fitWidth="98.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../images/books.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="28.0" layoutY="98.0" text="Books" textFill="#0f5494">
+               <font>
+                  <Font name="Lucida Fax Demibold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Pane>
+      <Pane layoutX="59.0" layoutY="298.0" onMouseClicked="#librarian_click" prefHeight="129.0" prefWidth="97.0">
+         <children>
+            <ImageView fitHeight="129.0" fitWidth="98.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../images/librarian.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="10.0" layoutY="105.0" text="Librarians" textFill="#0f5494">
+               <font>
+                  <Font name="Lucida Fax Demibold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Pane>
+      <Pane layoutX="237.0" layoutY="185.0" onMouseClicked="#member_click" prefHeight="129.0" prefWidth="97.0">
+         <children>
+            <ImageView fitHeight="129.0" fitWidth="98.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../images/members.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="14.0" layoutY="105.0" text="Members" textFill="#0f5494">
+               <font>
+                  <Font name="Lucida Fax Demibold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Pane>
+      <Pane layoutX="237.0" layoutY="349.0" onMouseClicked="#borrow_book_click" prefHeight="129.0" prefWidth="98.0">
+         <children>
+            <ImageView fitHeight="106.0" fitWidth="97.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../images/borrowbook.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="-5.0" layoutY="105.0" text="Borrow Books" textFill="#0f5494">
+               <font>
+                  <Font name="Lucida Fax Demibold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Pane>
+      <Label layoutX="484.0" layoutY="508.0" onMouseClicked="#back_click" text="&lt;&lt; Back">
+         <font>
+            <Font name="Lucida Fax Demibold" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Button layoutX="568.0" layoutY="-4.0" mnemonicParsing="false" onAction="#btn_logout_click" style="-fx-background-color: #eb0707; -fx-border-color: #eb0707;" text="x" textFill="#f5f3f3">
+         <font>
+            <Font name="Lucida Fax Demibold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Pane layoutX="435.0" layoutY="285.0" onMouseClicked="#return_book_click" prefHeight="129.0" prefWidth="98.0">
+         <children>
+            <ImageView fitHeight="129.0" fitWidth="98.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../images/returnbook.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="-8.0" layoutY="98.0" text="Return Books" textFill="#0f5494">
+               <font>
+                  <Font name="Lucida Fax Demibold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Pane>
+   </children>
+   <cursor>
+      <Cursor fx:constant="HAND" />
+   </cursor>
+</AnchorPane>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="593.0" prefWidth="587.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mmit.controller.AuthorController">
+   <children>
+      <ScrollPane layoutX="44.0" layoutY="73.0" prefHeight="271.0" prefWidth="500.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="tbl_author" prefHeight="271.0" prefWidth="500.0">
+                    <columns>
+                      <TableColumn fx:id="col_id" prefWidth="75.0" text="ID" />
+                      <TableColumn fx:id="col_name" prefWidth="162.0" text="Name" />
+                        <TableColumn fx:id="col_city" prefWidth="127.0" text="City" />
+                        <TableColumn fx:id="col_birthday" prefWidth="133.0" text="Birthday" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <Label layoutX="44.0" layoutY="41.0" text="Author List" textFill="#0f5494">
+         <font>
+            <Font name="Lucida Fax Demibold" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="547.0" layoutY="-2.0" mnemonicParsing="false" onAction="#btn_logout_click" prefHeight="33.0" prefWidth="40.0" style="-fx-background-color: #eb0707; -fx-border-color: #eb0707;" text="x" textFill="#f8f6f6">
+         <font>
+            <Font name="Lucida Fax Demibold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="122.0" layoutY="372.0" text="Name">
+         <font>
+            <Font name="Lucida Fax Regular" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_name" layoutX="212.0" layoutY="365.0" prefHeight="30.0" prefWidth="260.0" promptText="Enter name">
+         <font>
+            <Font name="Lucida Fax Regular" size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="122.0" layoutY="413.0" text="City">
+         <font>
+            <Font name="Lucida Fax Regular" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_city" layoutX="213.0" layoutY="406.0" prefHeight="30.0" prefWidth="260.0" promptText="Enter city">
+         <font>
+            <Font name="Lucida Fax Regular" size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="122.0" layoutY="453.0" text="Birthday">
+         <font>
+            <Font name="Lucida Fax Regular" size="14.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="txt_birthday" layoutX="213.0" layoutY="446.0" prefHeight="30.0" prefWidth="260.0" promptText="Choose birthday" />
+      <Button layoutX="213.0" layoutY="495.0" mnemonicParsing="false" onAction="#btn_add_click" prefHeight="24.0" prefWidth="54.0" style="-fx-background-color: #259439;" text="Add" textFill="#fffefe">
+         <font>
+            <Font name="Lucida Fax Regular" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="276.0" layoutY="495.0" mnemonicParsing="false" onAction="#btn_update_click" prefHeight="24.0" prefWidth="67.0" style="-fx-background-color: #4e96e8;" text="Update" textFill="#fffefe">
+         <font>
+            <Font name="Lucida Fax Regular" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="352.0" layoutY="495.0" mnemonicParsing="false" onAction="#btn_delete_click" prefHeight="24.0" prefWidth="61.0" style="-fx-background-color: #eb0707;" text="Delete" textFill="#fffefe">
+         <font>
+            <Font name="Lucida Fax Regular" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="474.0" layoutY="549.0" onMouseClicked="#back_click" text="&lt;&lt; Back">
+         <font>
+            <Font name="Lucida Fax Demibold" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Button layoutX="420.0" layoutY="495.0" mnemonicParsing="false" onAction="#btn_reset_click" prefHeight="24.0" prefWidth="61.0" style="-fx-background-color: yellow;" text="Reset" textFill="#eb0707">
+         <font>
+            <Font name="Lucida Fax Regular" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>
