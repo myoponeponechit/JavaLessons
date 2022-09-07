@@ -24,8 +24,10 @@ public class Index extends Application {
 			primaryStage.setScene(scene);
 			primaryStage.setTitle("Library Management System. Login");
 			primaryStage.show();
+			
 			original_stage = primaryStage;
 			original_stage.setResizable(false);
+			
 		} catch(Exception e) {
 			e.printStackTrace();
 		}

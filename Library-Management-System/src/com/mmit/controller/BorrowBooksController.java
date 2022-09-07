@@ -62,7 +62,9 @@ public class BorrowBooksController implements Initializable{
 	    	try {
 	    		var bookCode = txt_book_code.getText();
 		    	var cardId = txt_card_id.getText();
+		    	
 		    	DatabaseHandler.borrowBook(bookCode, cardId);
+		    	
 		    	txt_book_code.setText(null);
 		    	txt_card_id.setText(null);
 		    	showTransaction();

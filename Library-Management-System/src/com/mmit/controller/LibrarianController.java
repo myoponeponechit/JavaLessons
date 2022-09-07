@@ -72,6 +72,7 @@ public class LibrarianController implements Initializable{
         	lib.setPhone(txt_phone_no.getText());
         	
         	DatabaseHandler.addLibrarian(lib);
+        	
         	showAlert(AlertType.INFORMATION, "Success");
         	clearData();
         	showLibrarian();

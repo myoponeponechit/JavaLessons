@@ -246,7 +246,7 @@ public class BookAUDController implements Initializable{
 						cbo_author.getSelectionModel().select(selected_book.getAuthorName());
 				    	cbo_category.getSelectionModel().select(selected_book.getCategoryName());
 					}
-					);
+				);
 		}
 
 		private void showBook() {

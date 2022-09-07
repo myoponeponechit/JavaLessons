@@ -40,6 +40,7 @@ public class IndexController {
 		    		showAlert(AlertType.ERROR, "Password is required!");
 		    		return;
 		    	}
+		    	
 		    	// authentication
 		    	Librarian lib = DatabaseHandler.login(email, pass);
 		    	if(lib == null) {

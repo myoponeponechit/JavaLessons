@@ -114,7 +114,6 @@ public class BookViewController implements Initializable{
 	        	
 	    	}
 	    	catch (Exception e) {
-				//showAlert(AlertType.ERROR, e.getMessage());
 	    		e.printStackTrace();
 			}
 	    }

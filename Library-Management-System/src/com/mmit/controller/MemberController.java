@@ -162,7 +162,9 @@ public class MemberController implements Initializable{
 	    		selected_member.setName(txt_name.getText());
 	    		selected_member.setRollNo(txt_roll_no.getText());
 	    		selected_member.setYear(txt_class_year.getText());
+	    		
 	    		DatabaseHandler.updateMember(selected_member);
+	    		
 		    	showAlert(AlertType.INFORMATION, "Update success");
 		    	clearData();
 		    	showMember();

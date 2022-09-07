@@ -61,7 +61,7 @@ public class AuthorController implements Initializable{
 
 	    @FXML
 	    void btn_add_click(ActionEvent event) {
-	    	if(txt_birthday.getValue()== null) {
+	    	if(txt_birthday.getValue() == null) {
 	    		showAlert(AlertType.ERROR, "Birthday is required.");
 	    		return;
 	    	}

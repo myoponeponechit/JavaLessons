@@ -97,7 +97,9 @@ public class CategoryController implements Initializable{
 	    		var new_name = txt_name.getText();
 		    	var category = tbl_category.getSelectionModel().getSelectedItem();
 		    	category.setName(new_name);
+		    	
 		    	DatabaseHandler.updateCategory(category);
+		    	
 		    	showAlert(AlertType.INFORMATION, "Update success");
 		    	txt_name.setText(null);
 		    	showCategory();

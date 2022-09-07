@@ -42,16 +42,16 @@ public class MenuController {
 
     @FXML
     void category_click(MouseEvent event) throws IOException {
-    	Index.changeScene("view/Category.fxml", "Category");
+    	Index.changeScene("view/Category.fxml", "Categories");
     }
 
     @FXML
     void librarian_click(MouseEvent event) throws IOException {
-    	Index.changeScene("view/Librarian.fxml", "Librarian");
+    	Index.changeScene("view/Librarian.fxml", "Librarians");
     }
 
     @FXML
     void member_click(MouseEvent event) throws IOException {
-    	Index.changeScene("view/Member.fxml", "Member");
+    	Index.changeScene("view/Member.fxml", "Members");
     }
 }

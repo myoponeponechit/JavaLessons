@@ -23,7 +23,9 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
 
 public class ReturnBooksController implements Initializable{
-	
+
+    private Transaction selected_tran;
+    
 	@FXML
     private TableColumn<Transaction, LocalDate> col_borrow_date;
 
@@ -47,8 +49,6 @@ public class ReturnBooksController implements Initializable{
 
     @FXML
     private TextField txt_card_id;
-    
-    private Transaction selected_tran;
 
     @FXML
     void back_click(MouseEvent event) throws IOException {

@@ -17,7 +17,7 @@ public class BookController {
 
     @FXML
     void books_AUD_click(MouseEvent event) throws IOException {
-    	Index.changeScene("view/BookAUD.fxml", "Add/ Update/ Delete Books");
+    	Index.changeScene("view/BookAUD.fxml", "Add/Update/Delete Books");
     }
 
     @FXML
